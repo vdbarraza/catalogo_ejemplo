@@ -14,7 +14,6 @@ data = pd.read_csv('catalogo_features_ar.csv')
 df = pd.DataFrame(data)
 
 # Ajustar el ancho del contenedor para la tabla
-st.dataframe(df, width=1200)  # Ajusta el ancho según lo que necesites
 
 # Título estilizado y colores
 st.markdown("<h1 style='text-align: center; color: #4CAF50;'>📊 Catálogo de Features 📊</h1>", unsafe_allow_html=True)
@@ -31,7 +30,8 @@ else:
     df_filtrado = df
 
 # Mostrar el DataFrame filtrado
-st.write(df_filtrado)
+ # Ajusta el ancho según lo que necesites
+st.write(df_filtrado) 
 
 # Filtro por categoría de features con un título estilizado
 st.markdown("<h3 style='color: #4CAF50;'>📂 Filtrar por categoría de features</h3>", unsafe_allow_html=True)
