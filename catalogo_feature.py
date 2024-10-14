@@ -13,6 +13,9 @@ data = pd.read_csv('catalogo_features_ar.csv')
 # Crear un DataFrame con los datos
 df = pd.DataFrame(data)
 
+# Ajustar el ancho del contenedor para la tabla
+st.dataframe(df, width=1200)  # Ajusta el ancho según lo que necesites
+
 # Título estilizado y colores
 st.markdown("<h1 style='text-align: center; color: #4CAF50;'>📊 Catálogo de Features 📊</h1>", unsafe_allow_html=True)
 st.markdown("---")
